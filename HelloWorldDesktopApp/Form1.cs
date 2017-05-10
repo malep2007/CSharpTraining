@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.Entity;
+using System.Data.Entity.Migrations;
 
 namespace HelloWorldDesktopApp
 {
@@ -15,12 +17,22 @@ namespace HelloWorldDesktopApp
         public string username = "emalinga";
         public string password = "training";
 
+        
+        
+
         public Form1()
         {
             InitializeComponent();
             usernameTextBox.Text = "Enter username here";
             passwordTextBox.PasswordChar = '\0';
             passwordTextBox.Text = "Enter Password here";
+
+            //initialise data access
+            UserContext db = new UserContext();
+
+            db.Users.AddOrUpdate(p => p.Username);
+            
+            db.SaveChanges();
 
         }
 

@@ -118,6 +118,7 @@
             this.addDataToolStripMenuItem.Name = "addDataToolStripMenuItem";
             this.addDataToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.addDataToolStripMenuItem.Text = "Add Data";
+            this.addDataToolStripMenuItem.Click += new System.EventHandler(this.addDataToolStripMenuItem_Click);
             // 
             // deleteToolStripMenuItem
             // 
@@ -138,6 +139,7 @@
             this.aboutAppToolStripMenuItem.Name = "aboutAppToolStripMenuItem";
             this.aboutAppToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.aboutAppToolStripMenuItem.Text = "About App";
+            this.aboutAppToolStripMenuItem.Click += new System.EventHandler(this.aboutAppToolStripMenuItem_Click);
             // 
             // monthCalendar1
             // 

@@ -16,5 +16,19 @@ namespace HelloWorldDesktopApp
         {
             InitializeComponent();
         }
+
+        private void aboutAppToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form AboutApp = new Form();
+            AboutApp.Text = "Sample App for testing purposes";
+            AboutApp.Show();
+        }
+
+        private void addDataToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //Pop up add data form
+            AddDataForm addDataForm = new AddDataForm();
+            addDataForm.Show();
+        }
     }
 }
